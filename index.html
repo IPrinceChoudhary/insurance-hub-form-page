@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1279330463399802');
+      fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1279330463399802&ev=PageView&noscript=1"
+      /></noscript>
+    <link rel="stylesheet" href="./public/style.css" />
+    <link rel="icon" type="image/png" href="./public//Untitled design (21).png">
+    <title>Form</title>
+  </head>
+  <body class="bg-white text-black font-sans">
+    <div class="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+      <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-4 xl:p-8">
+        <form method="POST" netlify netlify-honeypot="bot-field" name="contactForm" action="/">
+          <div class="text-center mb-8">
+            <img
+              src="./public/THE insurance HUB logo (2).png"
+              alt="Logo"
+              class="mx-auto w-32"
+            />
+            <h1 class="text-2xl font-bold text-gray-800">
+              THE INSURANCE HUB - Car Insurance
+            </h1>
+            <p class="text-gray-600 mt-4">
+              Welcome to THE INSURANCE HUB! Please fill out the details below to
+              help us provide the best car insurance policy options for you.
+            </p>
+          </div>
+
+          <div class="lg:flex lg:gap-8">
+            <!-- Contact Number Field -->
+            <div class="w-full mb-6">
+              <label
+                for="contactNumber"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Contact Number:</label
+              >
+              <input
+                type="number"
+                id="contactNumber"
+                name="contactNumber"
+                required
+                placeholder="Enter your contact number"
+                class="w-full px-4 py-2 bg-transparent border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              />
+            </div>
+
+            <!-- Registration Number Field -->
+            <div class="w-full mb-6">
+              <label
+                for="registrationNumber"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Registration Number:</label
+              >
+              <input
+                type="text"
+                id="registrationNumber"
+                name="registrationNumber"
+                required
+                placeholder="Enter your registration number"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              />
+            </div>
+          </div>
+
+          <div class="lg:flex lg:gap-8">
+            <!-- Make Model Field -->
+            <div class="w-full mb-6">
+              <label
+                for="modelType"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Make Model:</label
+              >
+              <select
+                id="modelType"
+                name="modelType"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              >
+                <option value="" disabled selected hidden class="">
+                  Select your model type
+                </option>
+                <option value="other">Other</option>
+                <option value="maruti suzuki">Maruti Suzuki</option>
+                <option value="maruti suzuki alto 800">
+                  Maruti Suzuki Alto 800
+                </option>
+                <option value="maruti suzuki alto k10">
+                  Maruti Suzuki Alto K10
+                </option>
+                <option value="maruti suzuki swift">Maruti Suzuki Swift</option>
+                <option value="maruti suzuki swift dzire">
+                  Maruti Suzuki Swift Dzire
+                </option>
+                <option value="maruti suzuki baleno">
+                  Maruti Suzuki Baleno
+                </option>
+                <option value="maruti suzuki wagon r">
+                  Maruti Suzuki Wagon R
+                </option>
+                <option value="maruti suzuki celerio">
+                  Maruti Suzuki Celerio
+                </option>
+                <option value="maruti suzuki brezza">
+                  Maruti Suzuki Brezza
+                </option>
+                <option value="maruti suzuki eeco">Maruti Suzuki Eeco</option>
+                <option value="maruti suzuki ertiga">
+                  Maruti Suzuki Ertiga
+                </option>
+                <option value="hyundai">Hyundai</option>
+                <option value="hyundai santro">Hyundai Santro</option>
+                <option value="hyundai grand i10 nios">
+                  Hyundai Grand i10 Nios
+                </option>
+                <option value="hyundai i20">Hyundai i20</option>
+                <option value="hyundai i20 n line">Hyundai i20 N Line</option>
+                <option value="hyundai verna">Hyundai Verna</option>
+                <option value="hyundai aura">Hyundai Aura</option>
+                <option value="hyundai creta">Hyundai Creta</option>
+                <option value="hyundai venue">Hyundai Venue</option>
+                <option value="hyundai alcazar">Hyundai Alcazar</option>
+                <option value="tata">Tata</option>
+                <option value="tata tiago">Tata Tiago</option>
+                <option value="tata tigor">Tata Tigor</option>
+                <option value="tata altroz">Tata Altroz</option>
+                <option value="tata punch">Tata Punch</option>
+                <option value="tata nexon">Tata Nexon</option>
+                <option value="tata harrier">Tata Harrier</option>
+                <option value="tata safari">Tata Safari</option>
+                <option value="mahindra">Mahindra</option>
+                <option value="mahindra bolero">Mahindra Bolero</option>
+                <option value="mahindra xuv300">Mahindra XUV300</option>
+                <option value="mahindra xuv400">Mahindra XUV400</option>
+                <option value="mahindra xuv700">Mahindra XUV700</option>
+                <option value="mahindra thar">Mahindra Thar</option>
+                <option value="mahindra scorpio n">Mahindra Scorpio N</option>
+                <option value="mahindra bolero neo">Mahindra Bolero Neo</option>
+                <option value="honda">Honda</option>
+                <option value="honda amaze">Honda Amaze</option>
+                <option value="honda city">Honda City</option>
+                <option value="honda wr-v">Honda WR-V</option>
+                <option value="honda elevate">Honda Elevate</option>
+                <option value="toyota">Toyota</option>
+                <option value="toyota glanza">Toyota Glanza</option>
+                <option value="toyota urban cruiser hyryder">
+                  Toyota Urban Cruiser Hyryder
+                </option>
+                <option value="toyota fortuner">Toyota Fortuner</option>
+                <option value="toyota innova crysta">
+                  Toyota Innova Crysta
+                </option>
+                <option value="toyota innova hycross">
+                  Toyota Innova Hycross
+                </option>
+                <option value="toyota camry">Toyota Camry</option>
+                <option value="kia">Kia</option>
+                <option value="kia sonet">Kia Sonet</option>
+                <option value="kia seltos">Kia Seltos</option>
+                <option value="kia carens">Kia Carens</option>
+                <option value="kia ev6">Kia EV6</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="volkswagen polo">Volkswagen Polo</option>
+                <option value="volkswagen virtus">Volkswagen Virtus</option>
+                <option value="volkswagen taigun">Volkswagen Taigun</option>
+                <option value="volkswagen tiguan">Volkswagen Tiguan</option>
+                <option value="skoda">Skoda</option>
+                <option value="skoda slavia">Skoda Slavia</option>
+                <option value="skoda kushaq">Skoda Kushaq</option>
+                <option value="skoda superb">Skoda Superb</option>
+                <option value="skoda octavia">Skoda Octavia</option>
+                <option value="renault">Renault</option>
+                <option value="renault kwid">Renault Kwid</option>
+                <option value="renault triber">Renault Triber</option>
+                <option value="renault kiger">Renault Kiger</option>
+                <option value="renault duster">Renault Duster</option>
+                <option value="nissan">Nissan</option>
+                <option value="nissan magnite">Nissan Magnite</option>
+                <option value="nissan kicks">Nissan Kicks</option>
+                <option value="mg hector">MG Hector</option>
+                <option value="mg astor">MG Astor</option>
+                <option value="mg gloster">MG Gloster</option>
+                <option value="mg comet ev">MG Comet EV</option>
+                <option value="ford ecosport">Ford EcoSport</option>
+                <option value="ford figo">Ford Figo</option>
+                <option value="ford aspire">Ford Aspire</option>
+                <option value="jeep compass">Jeep Compass</option>
+                <option value="jeep meridian">Jeep Meridian</option>
+                <option value="bmw 3 series">BMW 3 Series</option>
+                <option value="bmw 5 series">BMW 5 Series</option>
+                <option value="bmw x1">BMW X1</option>
+                <option value="bmw x3">BMW X3</option>
+                <option value="bmw x5">BMW X5</option>
+                <option value="mercedes-benz a-class">
+                  Mercedes-Benz A-Class
+                </option>
+                <option value="mercedes-benz c-class">
+                  Mercedes-Benz C-Class
+                </option>
+                <option value="mercedes-benz e-class">
+                  Mercedes-Benz E-Class
+                </option>
+                <option value="mercedes-benz gla">Mercedes-Benz GLA</option>
+                <option value="mercedes-benz glc">Mercedes-Benz GLC</option>
+                <option value="audi a4">Audi A4</option>
+                <option value="audi q3">Audi Q3</option>
+                <option value="audi q5">Audi Q5</option>
+                <option value="audi q7">Audi Q7</option>
+                <option value="jaguar xe">Jaguar XE</option>
+                <option value="jaguar xf">Jaguar XF</option>
+                <option value="jaguar f-pace">Jaguar F-Pace</option>
+                <option value="volvo xc40">Volvo XC40</option>
+                <option value="volvo xc60">Volvo XC60</option>
+                <option value="lexus rx">Lexus RX</option>
+                <option value="lexus es">Lexus ES</option>
+                <option value="porsche macan">Porsche Macan</option>
+                <option value="porsche cayenne">Porsche Cayenne</option>
+                <option value="range rover evoque">Range Rover Evoque</option>
+                <option value="range rover sport">Range Rover Sport</option>
+                <option value="discovery sport">Discovery Sport</option>
+              </select>
+            </div>
+
+            <!-- Fuel Type Field -->
+            <div class="w-full mb-6">
+              <label
+                for="fuelType"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Fuel Type:</label
+              >
+              <select
+                id="fuelType"
+                name="fuelType"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              >
+                <option value="" disabled selected hidden>
+                  Select your fuel type
+                </option>
+                <option value="cng">CNG</option>
+                <option value="diesel">Diesel</option>
+                <option value="lpg">LPG</option>
+                <option value="petrol">Petrol</option>
+                <option value="lpg/petrol">LPG/Petrol</option>
+                <option value="electric">Electric</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="lg:flex lg:gap-8">
+            <!-- Variant Field -->
+            <div class="w-full mb-6">
+              <label
+                for="variant"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Variant:</label
+              >
+              <input
+                type="text"
+                id="variant"
+                name="variant"
+                placeholder="Enter your vehicle variant"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              />
+            </div>
+
+            <!-- Registration Date Field -->
+            <div class="w-full mb-6">
+              <label
+                for="registrationDate"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Registration Date:</label
+              >
+              <input
+                type="date"
+                id="registrationDate"
+                name="registrationDate"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              />
+            </div>
+
+            <!-- Manufacturing Date Field -->
+            <div class="w-full mb-6">
+              <label
+                for="manufacturingDate"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Manufacturing Date:</label
+              >
+              <input
+                type="date"
+                id="manufacturingDate"
+                name="manufacturingDate"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              />
+            </div>
+          </div>
+
+          <!-- Policy Type Field -->
+          <div class="w-full mb-6">
+            <label class="block mb-1 text-gray-700 font-semibold"
+              >What policy are you interested in?</label
+            >
+            <div class="flex items-center space-x-4">
+              <div>
+                <input
+                  type="radio"
+                  id="thirdParty"
+                  name="policyType"
+                  value="Third Party Only"
+                  required
+                  class="focus:ring-black"
+                />
+                <label for="thirdParty" class="text-gray-700"
+                  >Third Party Only</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="comprehensive"
+                  name="policyType"
+                  value="Comprehensive"
+                  required
+                  class="focus:ring-black"
+                />
+                <label for="comprehensive" class="text-gray-700"
+                  >Comprehensive</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:flex lg:gap-8">
+            <!-- Existing Policy Expiry Date Field -->
+            <div class="w-full mb-6">
+              <label
+                for="existingPolicyExpiryDate"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Existing Policy Expiry Date (if any):</label
+              >
+              <input
+                type="date"
+                id="existingPolicyExpiryDate"
+                name="existingPolicyExpiryDate"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              />
+            </div>
+
+            <!-- Previous Insurer Field -->
+            <div class="w-full mb-6">
+              <label
+                for="previousInsurer"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Previous Insurer (if any):</label
+              >
+              <select
+                id="previousInsurer"
+                name="previousInsurer"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              >
+                <option value="" disabled selected hidden>
+                  Select your previous insurer
+                </option>
+                <option value="other">Other</option>
+                <option value="acko general insurance">
+                  Acko General Insurance
+                </option>
+                <option value="bajaj allianz general insurance">
+                  Bajaj Allianz General Insurance
+                </option>
+                <option value="bharti axa general insurance">
+                  Bharti AXA General Insurance
+                </option>
+                <option value="cholamandalam ms general insurance">
+                  Cholamandalam MS General Insurance
+                </option>
+                <option value="digit general insurance">
+                  Digit General Insurance
+                </option>
+                <option value="edelweiss general insurance">
+                  Edelweiss General Insurance
+                </option>
+                <option value="future generali india insurance">
+                  Future Generali India Insurance
+                </option>
+                <option value="hdfc ergo general insurance">
+                  HDFC ERGO General Insurance
+                </option>
+                <option value="icici lombard general insurance">
+                  ICICI Lombard General Insurance
+                </option>
+                <option value="iffco tokio general insurance">
+                  IFFCO Tokio General Insurance
+                </option>
+                <option value="kotak mahindra general insurance">
+                  Kotak Mahindra General Insurance
+                </option>
+                <option value="liberty general insurance">
+                  Liberty General Insurance
+                </option>
+                <option value="national insurance company">
+                  National Insurance Company
+                </option>
+                <option value="new india assurance">New India Assurance</option>
+                <option value="oriental insurance company">
+                  Oriental Insurance Company
+                </option>
+                <option value="reliance general insurance">
+                  Reliance General Insurance
+                </option>
+                <option value="royal sundaram general insurance">
+                  Royal Sundaram General Insurance
+                </option>
+                <option value="sbi general insurance">
+                  SBI General Insurance
+                </option>
+                <option value="shriram general insurance">
+                  Shriram General Insurance
+                </option>
+                <option value="tata aig general insurance">
+                  Tata AIG General Insurance
+                </option>
+                <option value="united india insurance">
+                  United India Insurance
+                </option>
+                <option value="universal sompo general insurance">
+                  Universal Sompo General Insurance
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="lg:flex lg:gap-8">
+            <!-- Previous Policy Type Field -->
+            <div class="w-full mb-6">
+              <label class="block mb-1 text-gray-700 font-semibold"
+                >Previous Policy Type(if any):</label
+              >
+              <div class="flex items-center space-x-4">
+                <div>
+                  <input
+                    type="radio"
+                    id="previousThirdParty"
+                    name="previousPolicyType"
+                    value="Third Party"
+                    class="focus:ring-black"
+                  />
+                  <label for="previousThirdParty" class="text-gray-700"
+                    >Third Party</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="previousComprehensive"
+                    name="previousPolicyType"
+                    value="Comprehensive"
+                    class="focus:ring-black"
+                  />
+                  <label for="previousComprehensive" class="text-gray-700"
+                    >Comprehensive</label
+                  >
+                </div>
+              </div>
+            </div>
+  
+            <!-- Did you make any claim in your previous policy? -->
+            <div class="w-full mb-6">
+              <label class="block mb-1 text-gray-700 font-semibold"
+                >Did you make any claim in your previous policy?(if any)</label
+              >
+              <div class="flex items-center space-x-4">
+                <div>
+                  <input
+                    type="radio"
+                    id="claimYes"
+                    name="previousPolicyClaim"
+                    value="yes"
+                    class="focus:ring-black"
+                  />
+                  <label for="claimYes" class="text-gray-700">Yes</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="claimNo"
+                    name="previousPolicyClaim"
+                    value="no"
+                    class="focus:ring-black"
+                  />
+                  <label for="claimNo" class="text-gray-700">No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:flex lg:gap-8">
+            <!-- Previous Year NCB Field -->
+            <div class="w-full mb-6">
+              <label
+                for="previousYearNCB"
+                class="block mb-1 text-gray-700 font-semibold"
+                >Previous Year NCB (if any):</label
+              >
+              <select
+                id="previousYearNCB"
+                name="previousYearNCB"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500"
+              >
+                <option value="" disabled selected hidden>
+                  Select your previous NCB
+                </option>
+                <option value="0%">0%</option>
+                <option value="20%">20%</option>
+                <option value="25%">25%</option>
+                <option value="35%">35%</option>
+                <option value="45%">45%</option>
+                <option value="50%">50%</option>
+              </select>
+            </div>
+  
+            <!-- Did you ownership change? -->
+            <div class="w-full mb-6">
+              <label class="block mb-1 text-gray-700 font-semibold"
+                >Did your ownership change?:</label
+              >
+              <div class="flex items-center space-x-4">
+                <div>
+                  <input
+                    type="radio"
+                    id="ownershipYes"
+                    name="ownershipChange"
+                    value="yes"
+                    class="focus:ring-black"
+                  />
+                  <label for="ownershipYes" class="text-gray-700">Yes</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="ownershipNo"
+                    name="ownershipChange"
+                    value="no"
+                    class="focus:ring-black"
+                  />
+                  <label for="ownershipNo" class="text-gray-700">No</label>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Owner Type Field -->
+            <div class="w-full mb-6">
+              <label class="block mb-1 text-gray-700 font-semibold"
+                >Owner Type:</label
+              >
+              <div class="flex items-center space-x-4">
+                <div>
+                  <input
+                    type="radio"
+                    id="individual"
+                    name="ownerType"
+                    value="individual"
+                    class="focus:ring-black"
+                  />
+                  <label for="individual" class="text-gray-700">Individual</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="corporate"
+                    name="ownerType"
+                    value="corporate"
+                    class="focus:ring-black"
+                  />
+                  <label for="corporate" class="text-gray-700">Corporate</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button
+              type="submit"
+              class="w-full lg:w-auto lg:my-[1.5rem] py-2 px-4 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-slate-500"
+            >
+              Submit
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
