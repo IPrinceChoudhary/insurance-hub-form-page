@@ -3,26 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16878859243"
+    ></script>
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1279330463399802');
-      fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1279330463399802&ev=PageView&noscript=1"
-      /></noscript>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16878859243");
+    </script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1279330463399802");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1279330463399802&ev=PageView&noscript=1"
+    /></noscript>
     <link rel="stylesheet" href="./public/style.css" />
-    <link rel="icon" type="image/png" href="./public//Untitled design (21).png">
+    <link
+      rel="icon"
+      type="image/png"
+      href="./public//Untitled design (21).png"
+    />
     <title>Form</title>
     <style>
-      span{
+      span {
         position: absolute;
         top: 3rem;
         transform: translate(-50%, -50%);
@@ -38,7 +75,12 @@
   <body class="bg-white text-black font-sans">
     <div class="flex justify-center items-center min-h-screen bg-gray-100 p-4">
       <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-4 xl:p-8">
-        <form method="POST" netlify netlify-honeypot="bot-field" name="contactForm">
+        <form
+          method="POST"
+          netlify
+          netlify-honeypot="bot-field"
+          name="contactForm"
+        >
           <div class="text-center mb-8">
             <img
               src="./public/THE insurance HUB logo (2).png"
@@ -52,7 +94,10 @@
               Welcome to THE INSURANCE HUB! Please fill out the details below to
               help us provide the best car insurance policy options for you.
             </p>
-            <span>Contact Us: <a href="tel:+91 70112 60306">+91 70112 60306</a></span>
+            <span
+              >Contact Us:
+              <a href="tel:+91 70112 60306">+91 70112 60306</a></span
+            >
           </div>
 
           <div class="lg:flex lg:gap-8">
@@ -493,7 +538,7 @@
                 </div>
               </div>
             </div>
-  
+
             <!-- Did you make any claim in your previous policy? -->
             <div class="w-full mb-6">
               <label class="block mb-1 text-gray-700 font-semibold"
@@ -548,7 +593,7 @@
                 <option value="50%">50%</option>
               </select>
             </div>
-  
+
             <!-- Did you ownership change? -->
             <div class="w-full mb-6">
               <label class="block mb-1 text-gray-700 font-semibold"
@@ -577,7 +622,7 @@
                 </div>
               </div>
             </div>
-  
+
             <!-- Owner Type Field -->
             <div class="w-full mb-6">
               <label class="block mb-1 text-gray-700 font-semibold"
@@ -592,7 +637,9 @@
                     value="individual"
                     class="focus:ring-black"
                   />
-                  <label for="individual" class="text-gray-700">Individual</label>
+                  <label for="individual" class="text-gray-700"
+                    >Individual</label
+                  >
                 </div>
                 <div>
                   <input
@@ -608,7 +655,6 @@
             </div>
           </div>
 
-
           <!-- Submit Button -->
           <div class="text-center">
             <button
@@ -618,7 +664,6 @@
               Submit
             </button>
           </div>
-
         </form>
       </div>
     </div>
